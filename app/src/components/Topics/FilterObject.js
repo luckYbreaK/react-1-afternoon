@@ -19,7 +19,6 @@ class FilterObject extends Component {
 
     filterArray() {
         let filterArray = this.state.unFilteredArray.filter(obj => obj.hasOwnProperty(this.state.userInput));
-        console.log(filterArray);
         this.setState({
             filteredArray : filterArray
         });
